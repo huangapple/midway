@@ -6,6 +6,8 @@ export interface HttpProxyStrategy {
   ignoreHeaders?: {
     [key: string]: boolean;
   }
+  //额外的axios请求config
+  extReqOptions?: { [key: string]: any }
 }
 
 export interface HttpProxyConfig extends HttpProxyStrategy {
